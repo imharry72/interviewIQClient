@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 import axios from 'axios';
 import { ServerUrl } from '../App';
 import { useDispatch } from 'react-redux';
-import { setUserData } from '../redux/userSlice';
+import { setUserData } from '../redux/userSlice.js';
 function Pricing() {
   const navigate = useNavigate()
   const [selectedPlan, setSelectedPlan] = useState("free");

@@ -7,9 +7,9 @@ import { FaUserAstronaut } from "react-icons/fa";
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { ServerUrl } from '../App';
-import { setUserData } from '../redux/userSlice';
-import AuthModel from './AuthModel';
+import { ServerUrl } from '../App.jsx';
+import { setUserData } from '../redux/userSlice.js';
+import AuthModel from './AuthModel.jsx';
 function Navbar() {
     const {userData} = useSelector((state)=>state.user)
     const [showCreditPopup,setShowCreditPopup] = useState(false)
